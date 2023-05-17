@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal portfólio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preload" href="assets/java/main.js" as="script">
+</head>
+<body>
+
+    <header id="header">
+        <h1 id="logo"> Probabilidade </h1>
+     <nav id="nav">
+        <button id="mobile">Menu
+            <span id="iconem"></span>
+        </button>
+        <ul id="menu">
+            <li><a href="index.html"> página inicial </a></li>
+            <li><a href="1tri.html"> página trimestre </a></li> 
+            <li><a href="poligonos.html"> Polígonos </a></li>  
+            <li><a href="triangulos.html"> Triângulos </a></li> 
+
+        </ul>
+     </nav>
+    </header>
+    </div>
+    <div>
+
+        <h1>Introdução :</h1><br>
+        <p>&nbsp;&nbsp;Sou uma pessoa que não é boa em definir algo, então vou tentar definir com as minhas palavras mesmo,
+            a probabilidade por definição é a possibilidade de algo acontecer, por exemplo, se eu jogar um dado
+            tem 50% de cair cara e 50% de cair coroa.<br>
+            &nbsp;&nbsp;Eu achei um conteúdo fácil, mas oque complica é a falta de entendimento das questões, é um 
+            conteúdo que qualquer pessoa consegue entender, mas com as questões impostas durante a matéria, 
+            dificulta muito.
+        </p>
+
+
+
+        <h2>&pointint; Espaço amostral e calculo de probabilidades : </h2>
+        <br>
+        <p>É o conjunto dos resultados possiveis em um evento aleatório, ele é declarado com um "U" ex : 
+            <br><p class="center">Em uma jogada de um dado, seu espaço amostral é :<br> U = {1,2,3,4,5,6}</p>
+        </p><br>
+        <p>Já um evento, é um subproduto do espaço amostral, por exemplo cair um numero ímpar na jogada de um dado.
+            <p class="center">A = {1,3,5}, n(a) = 3</p>
+        </p>
+        <p> E para finalizar espaço amostral, uma dificuldade que pode traumatizar pessoas desatentas : </p>
+        <p class="center"> Espaço amostral de dois dados, um vermelho e outro branco : <br><br>
+            <img class="center" src="assets/img/dado_vermelho_branco.png" >
+            <br><br>
+            n(u) = 36
+            Como são dois dados,então há chances a mais, pode cair em um dos dados o numero 4 e no outro 3, ou 
+            em um 1,  e no outro 3, são 6x6 o espaço amostral deles.
+        </p>
+
+        <p> p(A) = n° de casos favoráveis / n° de casos possiveis  ou :</p>
+
+        <p style="text-align:center">P(A) = <u>n(A)</u><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n(Ω)</p>
+
+            <br>
+            <p class="fundoexemplos"> EX : Determinar a probabilidade de tirarmos uma bola branca em uma urna com 10 bolas brancas e 20 bolas vermelhas.
+                <br><br> Casos favoráveis → 10 (bolas brancas)
+
+                <br><br>Casos possíveis → 10 + 20 (bolas brancas + bolas vermelhas)
+
+                <br> <br> P(A) = 10 / 3
+                <br> P(A) = 1 / 3
+                <br> P(A) = 0,33333...
+                <br><b> P(A) = 33,3333...%</b>
+            </p>
+            <h2>&pointint; Probabilidade condicional</h2>
+
+            <p>Chamamos de probabilidade condicional quando queremos calcular a probabilidade de
+                 um evento A acontecer depois de já ter acontecido o evento B.<br>&nbsp;Com o símbolo p(A|B)
+                  indicamos a probabilidade de A dado que B ocorreu.
+                  Quando calculamos p(A|B), tudo se passa como se B fosse um novo espaço amostral “reduzido”
+                   dentro do qual queremos calcular a probabilidade de A.
+             <br><br><br> Temos duas formas de calcular p(A|B) :  
+            
+                <p>1° forma : Considerando a probabilidade de A em relação ao espaço amostral do B.<br><br></p></li>
+                <p>2° forma : Usando a fórmula:  
+                    <p style="text-align:center">P(A|B) = <u>p(A∩B)<br></u>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p(B)</p>
+                        <br><br><p><b>Lembrando :</b> Exestem eventos complementares que são formados pelo inverso dos resultados de outro evento.
+                             Ou seja, dado um evento A, o evento complementar de A será um evento composto de tudo o que não é A.
+                            <br> ou seja : P(A) + P('A) = 1 </p>
+                        <br><br>
+                        <div class="fundoexemplos">
+                <p>"(Enem) O diretor de um colégio leu numa revista que os pés das mulheres
+                     estavam aumentando. Há alguns anos, a média do tamanho dos calçados das mulheres era de 35,5, e, 
+                     hoje, é de 37,0. Embora não fosse uma informação científica, ele ficou curioso e fez uma pesquisa
+                      com as funcionárias do seu colégio, obtendo o quadro a seguir:"
+                      <br><br>
+                      
+                      <table border="1">
+                        <thead>
+                        <tr>
+                            <td>N° dos calçados</td>
+                            <td>N° de funcionárias</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>39</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>37</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>35</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <p>Probabilidade A = Calçar 38 <br> Probabilidade B = calçar mais que 36 <br><br>A∩B → A intersecção 
+                        é o conjunto formado pelas pessoas que calçam mais que 36 e que calçam 38, logo, ele é formado
+                         pelas 10 funcionárias que calçam 38.<br><br>n(B) = 3 + 10 + 1 = 14<br>
+                         n(A∩B) = 10<br><br>
+                         P(A|B) = 10 / 14
+                         <br><b>P(A|B) = 5 / 7
+                      </b>
+                         
+
+                
+                   </p></div>
+                </p>
+            
+            </p>
+            </p>
+        <h2>&pointint;  Calculadora de evento : </h2>
+        <br>
+        <div class="fundo">
+       <label for="ff">Casos Favoráveis
+        <input type="text" name="possiveis" id="ff"><br>
+        </label>
+        <label for="pp">Casos possíveis
+        <input type="text" name="ocorridos" id="pp">
+        </label>
+        <br>
+        <input type="button" value="Calcular" id="cc">
+       <br><br>
+       <label for="rr">Probabilidade de eventos ocorrerem P(A)
+       <input type="text" name="p(a)" id="r1">
+       <br><br>
+       <label for="rr">Probabilidade de eventos não ocorrerem P('A)
+       <input type="text" name="p('a)" id="r2">
+    </label>
+    </div>
+        <p></p>
+
+    </div>
+    <div class="direita">
+
+        <a href="poligonos.html"> <button>Ângulos e Polígonos</button></a></button> <br><br>
+
+    </div>
+
+    <div id="container_page">
+        <footer id="rodape">
+            <img src="assets/img/ifrs.jpg" height="100px" class="ifrs">
+            <p>&copy;Portfólio abner faé</p> 
+            <p>Email de contato : barbosafaeabner@gmail.com </p>
+            <p>telefone : 54 - 99996 5656 </p>
+          </footer>
+        </div>
+        <script src="assets/java/main.js"></script>
+</body>
+</html>

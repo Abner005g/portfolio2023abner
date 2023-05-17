@@ -1,0 +1,246 @@
+body{
+    background-color: black;
+    background-image: url(fundo-de-madeira.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    
+}
+body , ul{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.top{
+   text-align: start;
+   
+}
+h1{
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);    
+    border: 2px solid rgba(0,0,0,0.5);
+    font-size: 40px;
+}
+h2{
+    color: white;
+}
+p , label{
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    background-color: black;
+    padding: 5px;
+    }
+footer p{
+        font-size: 15px;
+    }
+.ifrs{
+    float: right;
+}
+
+
+button{
+        background-color: rgba(0, 0, 0, 0.836);
+        text-align: center;
+        width: 50%;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 19px;
+        color: white;
+    }
+button:hover{
+        width: 55%;
+        height: 55px;
+    }
+.center{
+        text-align: center;
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+input[type=text]{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+    height: 30px;
+    width: 300px;
+    border-radius: 17px;
+    border-color: white;
+}
+input[type=button]{
+    border-radius: 12px;
+    width: 50%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-weight: bolder ;
+}
+input[type=button]:hover{
+    width: 55%;
+    height: 32px;
+}
+.fundo{
+    background-color: rgba(0,0,0,0.5);
+    width: 350px;
+    border-radius: 12px;
+    border : 2px solid white;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    margin: auto;
+
+}
+.fundoexemplos{
+    background-color: rgba(179, 179, 179, 0.5);
+    width: 600px;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: black;
+}
+table{
+margin: auto;
+color: white;
+border-radius: 4px;
+border-color: white;
+background-color: rgba(0, 0, 0, 0.322);
+}
+.direita{
+    text-align: right;
+}
+.lcima{
+    text-decoration: overline;
+}
+.direita button{
+    height: 30px;
+    width: 200px;
+    font-size: 15px ;
+}
+.direita button:hover{
+    height: 32px;
+    width: 210px;
+}
+li:hover{
+    font-size: 110%;
+}
+li{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+
+
+
+
+
+
+li:hover{
+    border-radius: 16px;
+    background-color: rgba(0,0,0,0.5);
+}
+#logo {
+    font-size: 1.5 rem;
+    font-weight: bold;
+    color: white;
+}
+#header{
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    background-color: black;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+#mobile{
+    display: none;
+    color: white;
+}
+@media(max-width :720px ){
+    #mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background : none;
+        cursor: pointer;
+        gap: .5rem;
+
+    }
+    #menu{
+       display : block;
+       position: absolute; 
+       width: 50%;
+       top: 70px;
+       right: 0px;
+       background-color: black;
+       visibility: hidden ;
+       overflow-y: hidden;
+       height: 0;
+       transition: .3s;
+       z-index: 1000;
+
+    }
+    #nav.active #menu{ 
+        height: calc(45vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    #iconem{
+        width: 20px;
+        border-top: 2px solid;
+    }
+    #iconem:after, #iconem:before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #iconem{
+        border-top: transparent;
+        background-color: black;
+    }
+    #nav.active #iconem::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #iconem::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
