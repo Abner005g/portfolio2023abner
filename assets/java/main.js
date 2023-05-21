@@ -4,9 +4,7 @@ $("#mobile").click(function (e) {
 
 });
 
-
-
-$("#cc").click(function (e){
+function calcularprob(){
 
     var cp = $("#ff").val(); 
     var co = $("#pp").val();
@@ -16,4 +14,8 @@ $("#cc").click(function (e){
     $("#r1").val(resultado1);
     $("#r2").val(resultado2);
 
-});
+}
+
+$("#cc").click(calcularprob);
+$("#ff").blur(calcularprob);
+$("#pp").blur(calcularprob);
