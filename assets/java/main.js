@@ -19,3 +19,6 @@ function calcularprob(){
 $("#cc").click(calcularprob);
 $("#ff").blur(calcularprob);
 $("#pp").blur(calcularprob);
+
+
+
