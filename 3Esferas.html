@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esferas</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main3tri.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preload" href="assets/java/main.js" as="script">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 id="logo"> Ultimato-Esferas</h1>
+        <nav id="nav">
+            <button id="mobile">Menu
+                <span id="iconem"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="3tri.html"> 3 trimestre </a></li>
+                <li><a href="3Prismas.html">Prismas </a></li>
+                <li><a href="3Piramides.html">Pirâmides </a></li>
+                <li><a href="3Cilindros.html">Cilindros </a></li>
+                <li><a href="3Cones.html">Cones </a></li>
+                <li><a class="selected">Esferas </a></li>
+                <li><a href="3GeoAnalitica.html">Geometria Analítica </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h2> Introdução : </h2>
+    De acordo com a matemática, uma esfera é uma figura tridimensional, que faz parte da geometria espacial. 
+    Ela ainda pertence ao grupo dos corpos redondos, também denominados de sólidos de revolução, Sólidos de 
+    revolução são sólidos que são formados a partir do movimento de giro de uma figura plana, nesse caso, 
+    um círculo.
+<br>
+<br>
+Bom, os elementos das esferas são: Polos que são o ponto mais baixo e o mais alto da esfera, 
+Equador que é onde sua seção tranversal passa pelo centro, Paralelo que é a circunferencia observada na seção transversal 
+da esfera com relação ao seu eixo de rotação e Meridiano que é as circunferências resultantes das secções de uma esfera por um plano que contém seu eixo de rotação.
+    <p>
+    </p>
+    <img src="assets/img/3trimestre/elementos-esfera2.png" height="400px" width="400px" alt="Cone" >
+
+    <h2>Seção de uma esfera</h2>
+    <img src="assets/img/3trimestre/seccao-da-esfera.png" height="400px" width="400px" alt="Cone" >
+    <p class="bull">É um corte feito na esfera por um plano na esfera , 
+        <br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp; E a relação dele é a<sup>2</sup> = r<sup>2</sup>+ b<sup>2</sup></p>
+        <br>&nbsp;&nbsp;&nbsp;- a é o raio da circunferência formada pela secção transversal;
+        <br>
+        <br>&nbsp;&nbsp;&nbsp;- r é o raio da esfera;
+        <br>
+        <br>&nbsp;&nbsp;&nbsp;- b é a distância do centro da esfera até a secção transversal.
+        
+
+    <h2>Calculos Esfera:</h2>
+        <p class="bull">Volume <br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp; V = 4/3* 	&pi;r<sup>3</sup></p>
+
+        <p class="bull">Área da Superficie Esferica - A "Casca" da Esfera<br> &nbsp;&nbsp;&nbsp; &#10140; &nbsp; A = 4&pi;r<sup>2</sup></p>
+
+        <p class="bull">Fuso Esférico<br> &nbsp;&nbsp;&nbsp; &#10140; &nbsp; A<sub>fuso</sub> = &pi;r<sup>2</sup>&alpha; / 90</p>
+
+        <p class="bull">Cunha Esférica<br> &nbsp;&nbsp;&nbsp; &#10140; &nbsp; A<sub>fuso</sub> = &pi;r<sup>3</sup>&alpha; / 270</p>
+
+
+    <div class="fundoexemplos">
+        <h2>Calculadora de Esfera e Seções</h2>
+  
+  <label for="raioEsfera">Raio da Esfera:</label>
+  <input type="number" id="raioEsfera"><br><br>
+  
+  <label for="raioSecao">Raio da Secção:</label>
+  <input type="number" id="raioSecao"><br><br>
+  
+  <label for="distanciaCentroSecao">Distância do Centro até a Secção:</label>
+  <input type="number" id="distanciaCentroSecao"><br><br>
+  
+  <label for="angulo">Ângulo (em graus):</label>
+  <input type="number" id="angulo"><br><br>
+  
+  <button onclick="calcularesfera()">Calcular</button><br><br>
+  
+  <p>Volume da Esfera: <span id="volumeEsfera"></span></p>
+  <p>Área da Superfície Esférica: <span id="areaSuperficie"></span></p>
+  <p>Área do Fuso Esférico: <span id="areaFuso"></span></p>
+  <p>Área da Cunha Esférica: <span id="areaCunha"></span></p>
+  <p id="mensagemErro"></p>
+    </div>
+
+    <h2>Auto Avaliação do Conteúdo :</h2>
+    Quanto a este conteúdo, estou seguro quanto ás fórmulas básicas, entendi a diferença de cada elemento das esferas,
+    consegui parcialmente colocar em prática as fórmulas, mas estou cada vez melhorando mais e mais.
+    <p>
+    </p>
+
+    <h2>Video explicativo :</h2>
+    <iframe width="1304" height="480" src="https://www.youtube.com/embed/4mEqtfBXrl8" title="ESFERA: Definição, Elementos, Seção esférica, Área e Volume (AULA 13/16)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <div class="direita">
+
+        <a href="3GeoAnalitica.html"> <button>Geometria Analítica</button></a></button> <br><br>
+
+    </div>
+    <div id="container_page">
+        <footer id="rodape">
+            <img src="assets/img/ifrs.jpg" height="100px" class="ifrs">
+            <p>&copy;Portfólio abner faé</p>
+            <p>Email de contato : barbosafaeabner@gmail.com </p>
+            <p>telefone : 54 - 99996 5656 </p>
+        </footer>
+    </div>
+    <script src="assets/java/main.js"></script>
+</body>
+
+</html>

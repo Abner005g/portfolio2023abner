@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal portfólio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main3tri.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preload" href="assets/java/main.js" as="script">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 id="logo"> Ultimato-Circunferências</h1>
+        <nav id="nav">
+            <button id="mobile">Menu
+                <span id="iconem"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="3tri.html"> 3 trimestre </a></li>
+                <li><a class="selected">Prismas </a></li>
+                <li><a href="3Piramides.html">Pirâmides </a></li>
+                <li><a href="3Cilindros.html">Cilindros </a></li>
+                <li><a href="3Cones.html">Cones </a></li>
+                <li><a href="3Esferas.html">Esferas </a></li>
+                <li><a href="3GeoAnalitica.html">Geometria Analítica </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+ <h2> Introdução : </h2>
+  Já comprou um colar com um cristal pendurado? então, um prisma é um sólido geométrico tridimensional que possui duas faces congruentes e paralelas chamadas de bases. Essas bases estão conectadas por faces laterais retangulares ou paralelogramos. O formato das bases determina o tipo específico de prisma, por exemplo, um prisma retangular possui bases retangulares.
+<br>
+<img src="assets/img/3trimestre//prisma_3.png" height="400px" width="400px" alt="Cone" >
+
+<br>
+
+<strong> Elementos:</strong>
+<br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp;Bases: São as faces do prisma que estão opostas uma à outra e têm a mesma forma e tamanho. Elas são paralelas e alinhadas uma em relação à outra.
+<br>
+<br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp;Faces Laterais: São os retângulos ou paralelogramos que conectam as bases do prisma. O número de faces laterais depende do tipo de prisma.
+<br>
+<br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp;Arestas: São as linhas onde as faces do prisma se encontram. As arestas das bases são chamadas de arestas da base, enquanto as arestas das faces laterais são chamadas de arestas laterais.
+<br>
+<br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp;Altura ou Altura do Prisma: É a distância perpendicular entre as bases de um prisma.    <p>
+    </p>
+    <img src="assets/img/3trimestre/" height="400px" width="400px" alt="Cone" >
+
+        <h2>Classificação de um prisma</h2>
+        <img src="assets/img/3trimestre/class.pris.png" height="400px" width="400px" alt="Cone" >
+        <p class="bull">Os prismas podem variar de acordo com a forma das suas bases. Por exemplo, um prisma triangular tem bases triangulares, um prisma pentagonal tem bases pentagonais e assim por diante.
+           
+    <h2>Calculos Prisma:</h2>
+        <p class="bull">Volume <br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp; V = 𝑨<sub>b</sub> ∙ h]
+            <br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp;Paralelepípedo V = 𝒂 ∙ 𝒃 ∙ h
+            <br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp;Cubo V = a<sup>3</sup>
+
+        <p class="bull">Área Total <br> 
+            &nbsp;&nbsp;&nbsp; &#10140; &nbsp; A<sub>t</sub> =  𝟐 ∙ 𝑨<sub>b</sub> + 𝑨<sub>L</sub>
+            <br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp;Paralelepípedo A<sub>t</sub> = 𝟐(𝒂𝒃 + 𝒂𝒄 + 𝒃𝒄)
+            <br>&nbsp;&nbsp;&nbsp; &#10140; &nbsp;Cubo A<sub>t</sub> = 𝟔𝒂²
+        </p>
+
+
+    <div class="fundoexemplos">
+        <h2>Calculadora de Prismas</h2>
+  
+  <label for="tipoPrisma">Escolha o Tipo de Prisma:</label>
+  <select id="tipoPrisma">
+    <option value="triangular">Prisma Triangular</option>
+    <option value="paralelepipedo">Paralelepípedo</option>
+    <option value="cubo">Cubo</option>
+  </select><br><br>
+  
+  <label for="valor1">Valor 1:</label>
+  <input type="number" id="valor1"><br><br>
+  
+  <label for="valor2">Valor 2:</label>
+  <input type="number" id="valor2"><br><br>
+  
+  <label for="altura">Altura:</label>
+  <input type="number" id="altura"><br><br>
+  
+  <button onclick="calcularprisma()">Calcular</button><br><br>
+  
+  <p>Resultado:</p>
+  <p id="resultado"></p>
+    </div>
+
+    <h2>Auto Avaliação do Conteúdo :</h2>
+    Prismas são um conteúdo dificil, e que eu não tive muita familiaridade, não consegui entender muito bem,
+    e o conteúdo não entrou na minha cabeça, não sei muito oque falar na autoavaliação, então somente falo que 
+    esse vonteúdo é difícil e eu fui muito mal nele.
+    <p>
+    </p>
+
+    <h2>Video explicativo :</h2>
+    <iframe width="1304" height="480" src="https://www.youtube.com/embed/nyCLC7iXTWI" title="GEOMETRIA ESPACIAL: PRISMA | Aula completa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="direita">
+
+        <a href="3Piramides.html"> <button>Pirâmides</button></a></button> <br><br>
+
+    </div>
+    <div id="container_page">
+        <footer id="rodape">
+            <img src="assets/img/ifrs.jpg" height="100px" class="ifrs">
+            <p>&copy;Portfólio abner faé</p>
+            <p>Email de contato : barbosafaeabner@gmail.com </p>
+            <p>telefone : 54 - 99996 5656 </p>
+        </footer>
+    </div>
+    <script src="assets/java/main.js"></script>
+</body>
+
+</html>

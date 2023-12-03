@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal portfólio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main3tri.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preload" href="assets/java/main.js" as="script">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 id="logo"> Ultimato-Circunferências</h1>
+        <nav id="nav">
+            <button id="mobile">Menu
+                <span id="iconem"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="3tri.html"> 3 trimestre </a></li>
+                <li><a href="3Prismas.html">Prismas </a></li>
+                <li><a class="selected">Pirâmides </a></li>
+                <li><a href="3Cilindros.html">Cilindros </a></li>
+                <li><a href="3Cones.html">Cones </a></li>
+                <li><a href="3Esferas.html">Esferas </a></li>   
+                <li><a href="3GeoAnalitica.html">Geometria Analítica </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h2> Introdução : </h2>
+    <p>De acordo com a matemática : pirâmide é um sólido geométrico que possui a base formada por um polígono e faces laterais triangulares que se encontram em um único ponto, conhecido como vértice.
+    </p>
+    <p class="bull">Pirâmide :</p>
+    <img src="assets/img/3trimestre/piramide.png" height="150px" width="150px" alt="Cone" >
+    <p class="bull">Elementos da Pirâmide : A pirâmide é composta pela sua base, o seu vértice, as suas faces laterais e suas arestas, tanto da base quanto laterais. Outro elemento importante da pirâmide é a altura, que é o segmento que liga o vértice até o plano da base da pirâmide, de forma perpendicular.</p>
+    <img src="assets/img/3trimestre/elementos-de-um-piramide.png" height="500px" width="500px" alt="Cone" >
+    <p class="bull">Natureza das Pirâmides :<br> Base é um triangulo → pirâmide triangular<br>
+        Base é um quadrilátero → Pirâmide quadrangular<br>
+        Base é um pentágono → Pirâmide pentagonal</p>
+        <br>
+    <p class="bull">
+        Base Regular vs. Base Irregular: Uma pirâmide pode ter uma base regular (quando todos os lados são iguais) ou uma base irregular (com lados de diferentes comprimentos).
+        <br>
+        <br>Classificação pela Base: As pirâmides podem ser nomeadas de acordo com a forma da base: pirâmide triangular, pirâmide quadrangular, pirâmide pentagonal e assim por diante.
+        <br>
+        <br>Pirâmides Regulares vs. Irregulares: Pirâmides regulares têm todas as faces laterais iguais e ângulos idênticos, enquanto as pirâmides irregulares têm faces laterais de tamanhos e ângulos variados.</p>
+    <img src="assets/img/3trimestre/piramidetipos.png" height="500px" width="500px" alt="Cone" >
+
+    <h2>Cálculo de áreas Pirâmide : </h2>
+
+    <p class="bull"> &nbsp; área Total 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>T</sub> = 𝑨<sub>b</sub> + 𝑨<sub>L</sub>
+    </p>
+
+    <p class="bull"> &nbsp; Volume
+        <br> &nbsp;&nbsp;&nbsp; &#10140; 𝑉 = 𝑨<sub>b</sub>*𝒉/3
+    </p>
+
+    <div class="fundoexemplos">
+        <h2>Calculadora de Cone</h2>
+  
+        <label for="raio">Raio da base:</label>
+        <input type="number" id="raio"><br><br>
+        
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura"><br><br>
+        
+        <label for="geratriz">Geratriz:</label>
+        <input type="number" id="geratriz"><br><br>
+        
+        <button onclick="calcularcone()">Calcular</button><br><br>
+        
+        <p>Área Lateral: <span id="areaLateral"></span></p>
+        <p>Área Total: <span id="areaTotal"></span></p>
+        <p>Volume: <span id="volume"></span></p>
+    </div>
+
+
+    
+    <h2> Introdução Troncos de Cones : </h2>
+    <p> Seção de um cone por um plano paralelo à base:<br><br>
+        Seccionando um cone por um plano paralelo à base, separamos
+em dois sólidos: uma cone menor e semelhante e um tronco de cone.
+    </p>
+    <p class="bull">Seção e exemplo :</p>
+    <img src="assets/img/3trimestre/Tronco_Cone.png" height="500px" width="500px" alt="Cone" >
+
+        <h2>Cálculo de áreas : </h2>
+
+    <p class="bull"> &nbsp; área da lateral 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>L</sub> =  𝐴<sub>L2</sub> − 𝐴<sub>l1</sub>
+    </p>
+
+    <p class="bull"> &nbsp; área Total 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>T</sub> = A<sub>L</sub> + 𝐵 + b
+    </p>
+
+    <p class="bull"> &nbsp; Volume
+        <br> &nbsp;&nbsp;&nbsp; &#10140; 𝑉 = (𝝅h)/3.(R<sup>2</sup> + Rr + r<sup>2</sup>)
+    </p>
+
+    <div class="fundoexemplos">
+        <h2>Calculadora de Tronco de Cone</h2>
+  
+        <label for="RaioMaior">Raio Maior:</label>
+        <input type="number" id="RaioMaior"><br><br>
+        
+        <label for="RaioMenor">Raio Menor:</label>
+        <input type="number" id="RaioMenor"><br><br>
+        
+        <label for="altura2">Altura:</label>
+        <input type="number" id="altura2"><br><br>
+        
+        <label for="geratriz2">Geratriz:</label>
+        <input type="number" id="geratriz2"><br><br>
+        
+        <button onclick="calculartronco()">Calcular</button><br><br>
+        
+        <p>Área Lateral: <span id="areaLateral2"></span></p>
+        <p>Área Total: <span id="areaTotal2"></span></p>
+        <p>Volume: <span id="volume2"></span></p>
+        <p id="mensagemErro2"></p>
+    </div>
+
+    <h2>Auto Avaliação do Conteúdo :</h2>
+    A parte de Troncos de cílindro é um pouco mais complicada, é um conteúdo que eu não gostei muito, mas é um conteúdo interesante.
+    <p>
+    </p>
+
+    <h2>Videos explicativos :</h2>
+
+    <p class="bull">Pirâmide</p>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/U2Ip283DZiM" title="PIRÂMIDE (9/16)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p class="bull">Troncos de Pirâmide</p>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/lnQnoZ5-_24" title="TRONCO DE PIRÂMIDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+
+    <div class="direita">
+
+        <a href="3Cilindros.html"> <button>Cilíndros</button></a></button> <br><br>
+
+    </div>
+    <div id="container_page">
+        <footer id="rodape">
+            <img src="assets/img/ifrs.jpg" height="100px" class="ifrs">
+            <p>&copy;Portfólio abner faé</p>
+            <p>Email de contato : barbosafaeabner@gmail.com </p>
+            <p>telefone : 54 - 99996 5656 </p>
+        </footer>
+    </div>
+    <script src="assets/java/main.js"></script>
+</body>
+
+</html>

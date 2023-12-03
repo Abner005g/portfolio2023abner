@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimato-Cones</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main3tri.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preload" href="assets/java/main.js" as="script">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 id="logo"> Cones </h1>
+        <nav id="nav">
+            <button id="mobile">Menu
+                <span id="iconem"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="3tri.html"> 3 trimestre </a></li>
+                <li><a href="3Prismas.html">Prismas </a></li>
+                <li><a href="3Piramides.html">Pirâmides </a></li>
+                <li><a href="3Cilindros.html">Cilindros </a></li>
+                <li><a class="selected">Cones </a></li>
+                <li><a href="3Esferas.html">Esferas </a></li>
+                <li><a href="3GeoAnalitica.html">Geometria Analítica </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h2> Introdução : </h2>
+    <p>Cones São cílindros mas sem uma das bases, formando uma espécia de triângulo visto de lado, de um termo mais técnico
+         é a reunião dos segmentos de reta com uma extremidade no vértive
+V e a outra nos pontos de um círculo, seus elementos são : Uma base Circular, Um vértice,Geratrizes, Raio da Base e altura.
+
+    </p>
+    <p class="bull">Cone :</p>
+    <img src="assets/img/3trimestre/cone.png" height="300px" width="300px" alt="Cone" >
+    <p class="bull">Elementos do cone :</p>
+    <img src="assets/img/3trimestre/cone-elementos.png" height="300px" width="300px" alt="Cone" >
+    <p class="bull">Classificação dos Cones : são respectivamente, Cone oblíquo, cone Reto, e Cone de Revolução.</p>
+    <img src="assets/img/3trimestre/tiposcone.png" height="500px" width="500px" alt="Cone" >
+
+    <h2>Seção Meridiana - Cone</h2>
+    <p class="bull"> &nbsp; Secção meridiana é a região determinada pela intersecção do Cone com um plano que contém o eixo, como se fosse cortar o Cone e abrir ele, igual ao Cilíndro</p>
+
+    <h2>Cálculo de áreas Cone : </h2>
+
+    <p class="bull"> &nbsp; área da lateral 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>L</sub> = 𝝅𝒓h
+    </p>
+
+    <p class="bull"> &nbsp; área Total 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>T</sub> = 𝝅𝒓(𝒓 + 𝒈)
+    </p>
+
+    <p class="bull"> &nbsp; Volume
+        <br> &nbsp;&nbsp;&nbsp; &#10140; 𝑉 =
+        𝝅𝒓²𝒉/3
+    </p>
+
+    <div class="fundoexemplos">
+        <h2>Calculadora de Cone</h2>
+  
+        <label for="raio">Raio da base:</label>
+        <input type="number" id="raio"><br><br>
+        
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura"><br><br>
+        
+        <label for="geratriz">Geratriz:</label>
+        <input type="number" id="geratriz"><br><br>
+        
+        <button onclick="calcularcone()">Calcular</button><br><br>
+        
+        <p>Área Lateral: <span id="areaLateral"></span></p>
+        <p>Área Total: <span id="areaTotal"></span></p>
+        <p>Volume: <span id="volume"></span></p>
+    </div>
+
+
+    
+    <h2> Introdução Troncos de Cones : </h2>
+    <p> Seção de um cone por um plano paralelo à base:<br><br>
+        Seccionando um cone por um plano paralelo à base, separamos
+em dois sólidos: uma cone menor e semelhante e um tronco de cone.
+    </p>
+    <p class="bull">Seção e exemplo :</p>
+    <img src="assets/img/3trimestre/Tronco_Cone.png" height="500px" width="500px" alt="Cone" >
+
+        <h2>Cálculo de áreas : </h2>
+
+    <p class="bull"> &nbsp; área da lateral 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>L</sub> =  𝐴<sub>L2</sub> − 𝐴<sub>l1</sub>
+    </p>
+
+    <p class="bull"> &nbsp; área Total 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>T</sub> = A<sub>L</sub> + 𝐵 + b
+    </p>
+
+    <p class="bull"> &nbsp; Volume
+        <br> &nbsp;&nbsp;&nbsp; &#10140; 𝑉 = (𝝅h)/3.(R<sup>2</sup> + Rr + r<sup>2</sup>)
+    </p>
+
+    <div class="fundoexemplos">
+        <h2>Calculadora de Tronco de Cone</h2>
+  
+        <label for="RaioMaior">Raio Maior:</label>
+        <input type="number" id="RaioMaior"><br><br>
+        
+        <label for="RaioMenor">Raio Menor:</label>
+        <input type="number" id="RaioMenor"><br><br>
+        
+        <label for="altura2">Altura:</label>
+        <input type="number" id="altura2"><br><br>
+        
+        <label for="geratriz2">Geratriz:</label>
+        <input type="number" id="geratriz2"><br><br>
+        
+        <button onclick="calculartronco()">Calcular</button><br><br>
+        
+        <p>Área Lateral: <span id="areaLateral2"></span></p>
+        <p>Área Total: <span id="areaTotal2"></span></p>
+        <p>Volume: <span id="volume2"></span></p>
+        <p id="mensagemErro2"></p>
+    </div>
+
+    <h2>Auto Avaliação do Conteúdo :</h2>
+    A parte de Troncos de cílindro é um pouco mais complicada, é um conteúdo que eu não gostei muito, mas é um conteúdo interesante.
+    <p>
+    </p>
+
+    <h2>Videos explicativos :</h2>
+
+    <p class="bull">Cones</p>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/nodXt7VZELM" title="CONE | Geometria espacial | Resumo de Matemática para o Enem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p class="bull">Troncos de Cones</p>
+    <iframe width="853" height="780" src="https://www.youtube.com/embed/QD3I7FbFCPo" title="TRONCO DE CONE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="direita">
+
+        <a href="3Esferas.html"> <button>Esferas</button></a></button> <br><br>
+
+    </div>
+    <div id="container_page">
+        <footer id="rodape">
+            <img src="assets/img/ifrs.jpg" height="100px" class="ifrs">
+            <p>&copy;Portfólio abner faé</p>
+            <p>Email de contato : barbosafaeabner@gmail.com </p>
+            <p>telefone : 54 - 99996 5656 </p>
+        </footer>
+    </div>
+    <script src="assets/java/main.js"></script>
+</body>
+
+</html>

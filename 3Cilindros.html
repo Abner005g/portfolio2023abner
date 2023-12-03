@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilíndros</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main3tri.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preload" href="assets/java/main.js" as="script">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 id="logo"> Cilíndros </h1>
+        <nav id="nav">
+            <button id="mobile">Menu
+                <span id="iconem"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="3tri.html"> 3 trimestre </a></li>
+                <li><a href="3Prismas.html">Prismas </a></li>
+                <li><a href="3Piramides.html">Pirâmides </a></li>
+                <li><a class="selected">Cilindros </a></li>
+                <li><a href="3Cones.html">Cones </a></li>
+                <li><a href="3Esferas.html">Esferas </a></li>
+                <li><a href="3GeoAnalitica.html">Geometria Analítica </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h2> Introdução : </h2>
+    <p>
+        Cilindro é a junção de segmentos de retas congruentes e paralelas com
+        extremidades nos pontos de dois círculos que estão em planos diferentes e
+        paralelos, seus elementos são: duas bases circulares, uma Geratriz, Um eixo, 
+        uma altura e dois Raios;
+    </p>
+
+    <h2>Clsssificação dos Cílindros</h2>
+    <p class="bull"> Cílindros podem ser classificados de acordo com seu formato, por exemplo o cilindro reto
+         não há uma geratriz e nem um ângulo entre base e altura.
+    </p> <br>
+    <img src="assets/img/3trimestre/tipos_cilindropng.png" alt="Fórmulas Áreas" height="600px" width="600">
+
+    <h2>Seção Meridiana - Cilíndro</h2>
+    <p class="bull"> &nbsp; Secção meridiana é a região determinada pela intersecção do cilindro com um plano que contém o eixo, como se fosse cortar o cilíndro e abrir ele</p>
+
+    <h2>Cálculo de áreas : </h2>
+
+    <p class="bull"> &nbsp; área da base 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>b</sub> = 𝝅𝒓<sup>2</sup>
+    </p>
+    <p class="bull"> &nbsp; área da lateral 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>L</sub> = 𝟐𝝅𝒓h
+    </p>
+
+    <p class="bull"> &nbsp; área Total 
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>T</sub> = 𝟐𝑨<sub>b</sub> + 𝑨<sub>L</sub>
+    </p>
+
+    <p class="bull"> &nbsp; Volume
+        <br> &nbsp;&nbsp;&nbsp; &#10140; V = 𝝅𝒓<sup>2</sup>h
+    </p>
+    <div class="fundoexemplos">
+        <h2>Cálculo de Área e Volume do Cilindro</h2>
+    
+    <label for="raio">Raio do cilindro:</label>
+    <input type="number" id="raio"><br><br>
+
+    <label for="altura">Altura do cilindro:</label>
+    <input type="number" id="altura"><br><br>
+
+    <button onclick="calcularCilindros()" class="center">Calcular</button><br><br>
+
+    <p class="resultados"></p>
+
+    </div>
+
+
+
+    <h2>Auto Avaliação do Conteúdo :</h2>
+    Calculo de Cílindros é o conteúdo mais fácil do trimestre, eu gostei dele mesmo as questões conseguirem complicar os cálculos
+    mas foi muito legal esse conteúdo e um dos quwe mais consegui ter um bom desempenho.
+    <p>
+    </p>
+
+    <h2>Video explicativo :</h2>
+
+    <iframe width="1304" height="480" src="https://www.youtube.com/embed/QadSxpif9fE" title="Cilindro | Geometria Espacial | Matemática" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br><br><br><br><br><br>
+    <div class="direita">
+
+        <a href="3Cones.html"> <button>Cones</button></a></button> <br><br>
+
+    </div>
+    <div id="container_page">
+        <footer id="rodape">
+            <img src="assets/img/ifrs.jpg" height="100px" class="ifrs">
+            <p>&copy;Portfólio abner faé</p>
+            <p>Email de contato : barbosafaeabner@gmail.com </p>
+            <p>telefone : 54 - 99996 5656 </p>
+        </footer>
+    </div>
+    <script src="assets/java/main.js"></script>
+</body>
+
+</html>
