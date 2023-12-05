@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal portfólio</title>
+    <title>Ultimato - Pirâmides</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main3tri.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preload" href="assets/java/main.js" as="script">
+    <link rel="shortcut icon" type="imagex/png" href="assets/css/matematica.png">
 </head>
 
 <body>
 
     <header id="header">
-        <h1 id="logo"> Ultimato-Circunferências</h1>
+        <h1 id="logo"> Pirâmides</h1>
         <nav id="nav">
             <button id="mobile">Menu
                 <span id="iconem"></span>
@@ -61,39 +62,39 @@
         <br> &nbsp;&nbsp;&nbsp; &#10140; 𝑉 = 𝑨<sub>b</sub>*𝒉/3
     </p>
 
-    <div class="fundoexemplos">
-        <h2>Calculadora de Cone</h2>
-  
-        <label for="raio">Raio da base:</label>
-        <input type="number" id="raio"><br><br>
-        
-        <label for="altura">Altura:</label>
-        <input type="number" id="altura"><br><br>
-        
-        <label for="geratriz">Geratriz:</label>
-        <input type="number" id="geratriz"><br><br>
-        
-        <button onclick="calcularcone()">Calcular</button><br><br>
-        
-        <p>Área Lateral: <span id="areaLateral"></span></p>
-        <p>Área Total: <span id="areaTotal"></span></p>
-        <p>Volume: <span id="volume"></span></p>
+    <div class="fundo">
+        <h2>Cálculo de área e volume de pirâmides</h2>
+        <label for="baseArea">Área da base (A<sub>b</sub>):</label>
+        <input type="number" id="baseArea">
+        <label for="lateralArea">Área lateral (A<sub>L</sub>):</label>
+        <input type="number" id="lateralArea">
+        <label for="height">Altura (h):</label>
+        <input type="number" id="height"><br>
+    
+        <button onclick="calcularpir()">Calcular</button>
+    
+        <p>Área Total: <span id="totalAreaResult"></span></p>
+        <p>Volume: <span id="volumeResult"></span></p>
     </div>
 
 
     
-    <h2> Introdução Troncos de Cones : </h2>
-    <p> Seção de um cone por um plano paralelo à base:<br><br>
-        Seccionando um cone por um plano paralelo à base, separamos
-em dois sólidos: uma cone menor e semelhante e um tronco de cone.
+    <h2> Introdução Troncos de Pirâmides : </h2>
+    <p> Os troncos de pirâmides são formas geométricas tridimensionais resultantes do corte 
+        paralelo a uma pirâmide, gerando duas bases paralelas de áreas diferentes conectadas 
+        por faces laterais. Essas figuras geométricas podem apresentar bases variadas, como quadradas,
+         retangulares ou triangulares, influenciando diretamente em suas fórmulas para cálculo de área
+          lateral, área total e volume. 
     </p>
-    <p class="bull">Seção e exemplo :</p>
-    <img src="assets/img/3trimestre/Tronco_Cone.png" height="500px" width="500px" alt="Cone" >
+    <p class="bull">Piramide e Tronco de Pirâmide :</p>
+    <img src="assets/img/3trimestre/formacao-tronco-piramide.png" height="500px" width="500px" alt="Cone" >
 
         <h2>Cálculo de áreas : </h2>
 
     <p class="bull"> &nbsp; área da lateral 
-        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>L</sub> =  𝐴<sub>L2</sub> − 𝐴<sub>l1</sub>
+        
+        <br> &nbsp;&nbsp;&nbsp; &#10140; 𝑨𝒍 = 𝒔𝒐𝒎𝒂 𝒅𝒂𝒔 á𝒓𝒆𝒂𝒔 𝒅𝒂𝒔 𝒇𝒂𝒄𝒆𝒔 𝒍𝒂𝒕𝒆𝒓𝒊𝒂𝒊𝒔 (𝒕𝒓𝒂𝒑é𝒛𝒊𝒐𝒔)<br>
+        <br> &nbsp;&nbsp;&nbsp; &#10140; A<sub>L</sub> =  𝐴<sub>L.Grande</sub> − 𝐴<sub>L.Peq</sub>
     </p>
 
     <p class="bull"> &nbsp; área Total 
@@ -101,35 +102,27 @@ em dois sólidos: uma cone menor e semelhante e um tronco de cone.
     </p>
 
     <p class="bull"> &nbsp; Volume
-        <br> &nbsp;&nbsp;&nbsp; &#10140; 𝑉 = (𝝅h)/3.(R<sup>2</sup> + Rr + r<sup>2</sup>)
+        <br> &nbsp;&nbsp;&nbsp; &#10140; 𝑉<sub>tronco</sub> = V<sub>Pir.grande</sub> - V<sub>pir.peq</sub>
     </p>
 
-    <div class="fundoexemplos">
-        <h2>Calculadora de Tronco de Cone</h2>
-  
-        <label for="RaioMaior">Raio Maior:</label>
-        <input type="number" id="RaioMaior"><br><br>
-        
-        <label for="RaioMenor">Raio Menor:</label>
-        <input type="number" id="RaioMenor"><br><br>
-        
-        <label for="altura2">Altura:</label>
-        <input type="number" id="altura2"><br><br>
-        
-        <label for="geratriz2">Geratriz:</label>
-        <input type="number" id="geratriz2"><br><br>
-        
-        <button onclick="calculartronco()">Calcular</button><br><br>
-        
-        <p>Área Lateral: <span id="areaLateral2"></span></p>
-        <p>Área Total: <span id="areaTotal2"></span></p>
-        <p>Volume: <span id="volume2"></span></p>
-        <p id="mensagemErro2"></p>
+    <div class="fundo">
+        <h2>Cálculo de áreas e volumes de tronco de pirâmide</h2>
+        <label for="baseArea1">Área da base maior (A<sub>1</sub>):</label>
+        <input type="number" id="pirbaseArea1">
+        <label for="baseArea2">Área da base menor (A<sub>2</sub>):</label>
+        <input type="number" id="pirbaseArea2">
+        <label for="height">Altura do tronco (h):</label>
+        <input type="number" id="pirheight">
+    
+        <button onclick="calculateTroncoDePir()">Calcular</button>
+    
+        <p>Área Lateral: <span id="pirlateralAreaResult"></span></p>
+        <p>Área Total: <span id="pirtotalAreaResult"></span></p>
+        <p>Volume: <span id="pirvolumeResult"></span></p>
     </div>
 
     <h2>Auto Avaliação do Conteúdo :</h2>
-    A parte de Troncos de cílindro é um pouco mais complicada, é um conteúdo que eu não gostei muito, mas é um conteúdo interesante.
-    <p>
+    Essa parte de Pirâmides é um tanto quanto complicada, mas entendi o comteúdo e fiquei sem nenhuma dúvida.    <p>
     </p>
 
     <h2>Videos explicativos :</h2>

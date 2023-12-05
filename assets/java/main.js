@@ -170,6 +170,46 @@ function calcularprisma() {
   document.getElementById('resultado').innerText = resultado;
 }
 
+function calcularpir() {
+  const baseArea = parseFloat(document.getElementById('baseArea').value);
+  const lateralArea = parseFloat(document.getElementById('lateralArea').value);
+  const height = parseFloat(document.getElementById('height').value);
+
+  const totalArea = baseArea + lateralArea;
+  const volume = (baseArea * height) / 3;
+
+  document.getElementById('totalAreaResult').innerText = totalArea.toFixed(2);
+  document.getElementById('volumeResult').innerText = volume.toFixed(2);
+}
+
+function calculateTroncoDePir() {
+  const baseArea1 = parseFloat(document.getElementById('pirbaseArea1').value);
+  const baseArea2 = parseFloat(document.getElementById('pirbaseArea2').value);
+  const height = parseFloat(document.getElementById('pirheight').value);
+
+  const perimeterSum = baseArea1 + baseArea2;
+  const lateralArea = perimeterSum * height / 2;
+  const totalArea = lateralArea + baseArea1 + baseArea2;
+  const volume = (baseArea1 + baseArea2) * height / 2;
+
+  document.getElementById('pirlateralAreaResult').innerText = lateralArea.toFixed(2);
+  document.getElementById('pirtotalAreaResult').innerText = totalArea.toFixed(2);
+  document.getElementById('pirvolumeResult').innerText = volume.toFixed(2);
+}
+function calcularDistanciaplanos() {
+  var x1 = parseFloat(document.getElementById('x1').value);
+  var y1 = parseFloat(document.getElementById('y1').value);
+  var x2 = parseFloat(document.getElementById('x2').value);
+  var y2 = parseFloat(document.getElementById('y2').value);
+
+  var distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+  var mediaX = (x1 + x2) / 2;
+  var mediaY = (y1 + y2) / 2;
+
+  document.getElementById('resultadoDistancia').innerHTML = 'A distância entre os pontos é: ' + distancia.toFixed(2);
+  document.getElementById('resultadoMedia').innerHTML = 'A média dos pontos é: (' + mediaX.toFixed(2) + ', ' + mediaY.toFixed(2) + ')';  
+}
+
 
 
 

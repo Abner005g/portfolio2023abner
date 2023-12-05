@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal portfólio</title>
+    <title>Ultimato-Geografia Analítica</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main3tri.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preload" href="assets/java/main.js" as="script">
+    <link rel="shortcut icon" type="imagex/png" href="assets/css/matematica.png">
 </head>
 
 <body>
 
     <header id="header">
-        <h1 id="logo"> Ultimato-Circunferências</h1>
+        <h1 id="logo"> Geografia Analítica</h1>
         <nav id="nav">
             <button id="mobile">Menu
                 <span id="iconem"></span>
@@ -27,7 +28,6 @@
                 <li><a href="3Cones.html">Cones </a></li>
                 <li><a href="3Esferas.html">Esferas </a></li>
                 <li><a class="selected">Geometria Analítica </a></li>
-
             </ul>
         </nav>
     </header>
@@ -35,27 +35,63 @@
     <h2> Introdução : </h2>
 
     <p>
+        estuda elementos geométricos em um sistema de coordenadas
+         num plano ou espaço. Estes objetos geométricos são determinados
+          por sua localização e posição em relação a pontos e eixos deste
+         sistema de orientação.
     </p>
 
-    <div class="fundoexemplos">
-        <h2></h2>
-        <p class="bull">
-        </p> <br>
-        <img src="" alt="Fórmulas Áreas">
-    </div>
+    <h2>Sistema cartesiano ortogonal </h2>
+    <p class="bull"> &nbsp; O Sistema Cartesiano Ortogonal é uma base de referência para localização de coordenadas.</p>
+        <img src="assets/img/3trimestre/sistema-cartesiano-ortogona.png" height="400px" width="400px" alt="Polígono regular">
+    <p class="bull"> 
+        A origem O (0,0) deste sistema é a intersecção destes eixos.
+    <br>&bull;O eixo x é o das abscissas.
+    <br>&bull;O eixo y é o das ordenadas.
+    <br>&bull;A orientação anti-horária dos quatro quadrantes.
+    </p>
+    
 
-    <h2></h2>
-    <p class="bull"> &nbsp; </p>
-        <img src="" height="300px" width="300px" alt="Polígono regular">
-    <p class="bull"> &nbsp; </p>
-        <img src="" height="500px" width="300px" alt="setor c">
+    <h2>Distância entre dois pontos no plano (2D)</h2>
+    <p class="bull"> &nbsp; A distância entre dois pontos no plano cartesiano é o comprimento do segmento que une estes dois pontos.</p>
+
+    <p class="bull"> Distância = √((x2 - x1)² + (y2 - y1)²)</p>
+<br>
+    <h2>Ponto Médio</h2>
+    <p class="bull"> &nbsp; Para determinar o ponto médio de um segmento de reta, basta fazer a média
+        aritmética das coordenadas</p>
+
+
+    <div class="fundo">
+        <h2>Calculadora de Distância entre Dois Pontos</h2>
+        <form>
+            <label for="x1">Coordenada x do ponto 1:</label>
+            <input type="number" id="x1"><br><br>
+            <label for="y1">Coordenada y do ponto 1:</label>
+            <input type="number" id="y1"><br><br>
+            <label for="x2">Coordenada x do ponto 2:</label>
+            <input type="number" id="x2"><br><br>
+            <label for="y2">Coordenada y do ponto 2:</label>
+            <input type="number" id="y2"><br><br>
+            <button type="button" onclick="calcularDistanciaplanos()">Calcular</button>
+          </form>
+          <p id="resultadoDistancia"></p>
+          <p id="resultadoMedia"></p>
+    </div>
 
     <h2>Auto Avaliação do Conteúdo :</h2>
 
     <p>
+        Bom, esse último conteúdo não foi muito bem estudado por falta de tempo, entendi apenas oque eu 
+        já sabia sobre planos cartesianos, e saber programar jogos em 3d ajudou a entender a questão dos pontos 
+        no espaço, é um conteúdo de fácil compreensão mas difícil de estudar, principalmente na parte de 
+        calcular os pontos no plano. Por fim, Obrigado por estar até aqui e fique com o video explicativo 
+        do conteúdo:
     </p>
 
     <h2>Video explicativo :</h2>
+
+    <iframe width="1304" height="480" src="https://www.youtube.com/embed/EdM5qFTQvhY" title="GEOMETRIA ANALÍTICA | QUER QUE DESENHE | DESCOMPLICA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
     <div class="direita">
